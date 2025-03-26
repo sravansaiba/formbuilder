@@ -35,7 +35,7 @@ export default function Builder() {
 
       {/* Main Content Area */}
       <div className="relative flex h-full  overflow-hidden">
-        <div className="flex flex-1 flex-col w-1/2 bg-slate-50 ">
+        <div className="flex flex-1 flex-col w-3/5 ">
           <Tabs tabs={tabsComputed} activeView={activeView} setActiveView={setActiveView} />
 
           {activeView === "questions" && (
@@ -72,7 +72,7 @@ export default function Builder() {
         </div>
 
         {/* Right Side (Preview Panel) */}
-        <aside className="hidden md:block w-1/2 border-l  border-slate-200 bg-white shadow-inner">
+        <aside className="hidden md:block w-2/5 border-l  border-slate-200 bg-white shadow-inner">
           <Preview fields={fields} />
         </aside>
       </div>

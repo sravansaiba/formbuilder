@@ -4,4 +4,5 @@ export interface Field {
     label: string;
     placeholder?: string;
     options?: { value: string; label: string }[];
+    rowId?:string;
   }
